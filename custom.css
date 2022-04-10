@@ -8,7 +8,9 @@ body {
 .warning {
     font-size: 16px !important;
 }
-
+span {
+  justify-content: space-between;
+}
 a {
     color: #354D5F;
 }
@@ -56,7 +58,8 @@ nav {
 }
 .jumbotron p {
     margin-bottom: 0px;
-    font-size: 22px;
+    font-size: 25px;
+    font-weight: 600;
 }
 .font-weight-normal {
   font-weight: normal !important;
@@ -101,7 +104,7 @@ nav {
     text-decoration-color: #354D5F;
 }
 .tally-text{
-  font-size: 3rem !important;
+  font-size: 25px;
   font-weight: 600;
   color: #354D5F;
 }
@@ -221,7 +224,7 @@ nav {
 }
 
 .hold-contain-bottom {
-    position: relative;
+    position: absolute;
     background-color: #ffffff;
     border-top: 2px solid #354D5F;
     border-left: 2px solid #354D5F;
@@ -298,6 +301,17 @@ h1 {
 p {
     color: #354D5F !important;
 }
+h6 {
+  color: #354D5F !important;
+  font-size: 110px;
+  display: grid;
+  justify-content: center;
+}
+h5 {
+  color: #354D5F !important;
+  font-size: 28px;
+  display: grid;
+}
 
 h4 {
   color: #354D5F;
@@ -334,7 +348,7 @@ h4 {
     color: #354D5F;
     background-color: #ffffff;
     border-color: #354D5F;
-    width: 50%;
+    width: 80%;
     font-weight: 600;
     border-radius: 40px;
     font-size: 22px !important;
@@ -346,6 +360,7 @@ h4 {
     -ms-user-select: none;
     user-select: none;
     white-space: nowrap;
+    margin-bottom: 50px;
 }
 
 @media (max-width: 992px){
@@ -366,7 +381,7 @@ h4 {
     color: #354D5F;
     background-color: #ffffff;
     border-color: #354D5F;
-    width: 50%;
+    width: 80%;
     font-weight: 600;
     border-radius: 40px;
     font-size: 22px !important;
@@ -377,6 +392,7 @@ h4 {
     -ms-user-select: none;
     user-select: none;
     white-space: nowrap;
+    margin-bottom: 50px;
 }
 
 .btn-sell:focus, .btn-sell:hover{
@@ -391,12 +407,11 @@ h4 {
     font-weight: 600;
     border-radius: 10px;
     font-size: 22px !important;
-    width: 100%;
+    width: 85%;
     height: 60px;
     line-height: 40px;
     margin-bottom: 20px;
     margin-top: 5px;
-    display: block;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-user-select: none;
@@ -456,7 +471,10 @@ h4 {
 
 @media (min-width: 992px){
 .nopad-left{
-    padding-left: 0px;
+  padding: 15px;
+  margin: auto;
+  justify-content: center;
+  display: contents;
 }
 .nopad-right{
     padding-right: 0px;
@@ -773,4 +791,15 @@ tr {
     line-height: 1;
     color: #354D5F;
     opacity: .5;
+}
+
+.tab-content2 {
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 2px solid #354D5F;
+  padding: 20px;
+
+}
+.bottomcontainer {
+  justify-content: start!important;
 }

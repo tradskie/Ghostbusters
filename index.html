@@ -26,7 +26,11 @@
 	<meta name="msapplication-TileColor" content="#2b5797">
 	<meta name="theme-color" content="#ffffff">
 	<title>Ghostbusters</title>
-	<!-- bootstrap core CSS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Libre+Franklin:wght@200&family=Rubik+Wet+Paint&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">	<!-- bootstrap core CSS -->
 	<link href="dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 	<link href="jumbotron-narrow.css" rel="stylesheet">
@@ -71,16 +75,16 @@
       <div class="jumbotron">
   			<div class="container-fluid miners-tally-container">
 				<div class="row">
-					<p><span id="contractBal" style="justify-content: center;display: flex;padding: 25px;"> <p>Contract:</p> <a>?</a></span></p>
+					<p><span id="contractBal" style="justify-content: space-between;display: flex;padding: 25px;">Contract: <a>0</a> </span></p>
 				</div>
 				<div class="row">
-					<p><span id="userTrx" style="justify-content: center;display: flex;padding: 25px;"> Wallet: <a>?</a></span></p>
+					<p><span id="userTrx" style="justify-content: space-between;display: flex;padding: 25px;"> Wallet: <a>0</a></span></p>
 				</div>
 				<div style="justify-content: center;display: flex;">
 					</div>
   				<div class="row">
   					<div class="col-md-12">
-  						<h2 class="tally-text">You have <span class="numminers">0</span> Shards</h2>
+						<p>	<span class="numminers" style="justify-content: space-between;display: flex;padding: 9px">Shards: <a>0</a></span></p>
   					</div>
   				</div>
 				  <div class="col-md-6 nopad-left nopad-lr" style="display: contents;">
@@ -108,11 +112,9 @@
 					<br>
   					</div>
   					</div>	
-					  <p>Daily Return <span class="">8%</span></p>
-					  <br>
-					  <p>APR <span class="">2,920%</span></p>
-					  <br>
-					  <p>Deposit Fee <span class="">8%</span></p>
+					  <p><span style="justify-content: space-between;display: flex;padding: 25px;"> Daily Return: <a>8%</a></span></p>
+					  <p><span style="justify-content: space-between;display: flex;padding: 25px;"> APR: <a>2,920%</a></span></p>
+					  <p><span style="justify-content: space-between;display: flex;padding: 25px;"> Deposit Fee: <a>8%</a></span></p>
   			</div>
   		</div>
     </div>

@@ -1,6 +1,6 @@
 body {
-    font-family: 'Proxima Nova', Georgia, sans-serif;
-    background-image: url("./assets/img/FANTOM.png");
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url("./assets/img/FANTOM.png");
     background-repeat: no-repeat;
     background-size: cover;
       background-attachment: fixed;
@@ -83,18 +83,23 @@ nav {
 }
 
 .miners-tally-container {
-    position: relative;
-    font-weight: bold;
-    font-size: 5rem !important;
-    /* border-top: 2px solid #0393ff; */
-    background-color: #2c3d4b;
-    border-top: 2px solid #0393ff;
-    border-left: 2px solid #0393ff;
-    border-right: 2px solid #0393ff;
-    border-bottom: 2px solid #0393ff;
-    border-radius: 20px 20px 20px 20px;
-    min-height: 20px;
-    padding: 5px;
+  position: relative;
+  font-weight: bold;
+  font-size: 5rem !important;
+  background-color: #2f333c;
+  border-top: 2px solid #fafafa;
+  border-left: 2px solid #fafafa;
+  border-right: 2px solid #fdfdfd;
+  border-bottom: 2px solid #fafafa;
+  border-radius: 20px 20px 20px 20px;
+  min-height: 20px;
+  box-shadow: 0px -3px 18px 12px #f0f0f0;
+/*  padding: 5px; */
+}
+.row {
+  /* margin-right: -15px; */
+  /* margin-left: -15px; */
+  padding: 15px;
 }
 
 .purple {
@@ -102,8 +107,8 @@ nav {
 }
 
 .numminers {
-    text-decoration: underline;
     text-decoration-color: #0393ff;
+    justify-content: end;
 }
 
 .numseeders {
@@ -313,11 +318,14 @@ h6 {
   font-size: 110px;
   display: grid;
   justify-content: center;
+  font-family: 'Rubik Wet Paint', cursive;
 }
 h5 {
   color: #0393ff !important;
   font-size: 28px;
   display: grid;
+  margin-bottom: 30px;
+  font-family: 'Rubik Wet Paint', cursive;
 }
 
 h4 {
@@ -467,12 +475,12 @@ h4 {
 
 
   .footer {
-    padding-top: 0px;
     color: inherit;
     border-radius: 20px;
-    border: 2px solid #0393ff;
+    border: 2px solid #ffffff;
     padding: 20px;
-    background: #2c3d4b;
+    background: #2f333c;
+    box-shadow: 0px -3px 18px 12px #f0f0f0;
 }
 
 .lr-pad {
@@ -806,9 +814,10 @@ tr {
 .tab-content2 {
   margin-top: 20px;
   border-radius: 20px;
-  border: 2px solid #0393ff;
+  border: 2px solid #fefefe;
   padding: 20px;
-  background: #2c3d4b;
+  background: #2f333c;
+  box-shadow: 0px -3px 18px 12px #f0f0f0;
 
 }
 .bottomcontainer {

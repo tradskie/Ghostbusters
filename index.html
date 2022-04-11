@@ -1,188 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<head>
-	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<meta content="Hire Miners to earn FTM" name="description">
-	<meta name="image" content="assets/img/FANTOM.png">
-    <!-- opengraph image -->
-	<meta property="og:image" content="assets/img/FANTOM.png">
-	<meta property="og:title" content="Ghostbusters">
-  <meta property="og:type" content="website"/>
-	<meta property="og:description" content="Hire Miners to earn FTM">
-	<meta property="og:url" content="index.html">
-	<!-- Twitter meta -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="index.html">
-	<meta name="twitter:title" content="Ghostbusters">
-	<meta name="twitter:description" content="Hire Miners to earn FTM">
-	<meta name="twitter:image" content="assets/img/FANTOM.png">
-	<!-- favicon files -->
-	<link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16" />	
-	<meta name="msapplication-TileColor" content="#2b5797">
-	<meta name="theme-color" content="#ffffff">
-	<title>Ghostbusters</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Libre+Franklin:wght@200&family=Rubik+Wet+Paint&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">	<!-- bootstrap core CSS -->
-	<link href="dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-	<link href="jumbotron-narrow.css" rel="stylesheet">
-	<link href="custom.css" rel="stylesheet">
-	<link href="assets/fonts/fonts.min.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-	<div class="modal" id="myModal">
-		<div class="modal-content">
-			<div id="modal-internal"></div>
-		</div>
-	</div>
-	<div class="container">
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div></div>
-				<div class="navbar-header">
-				</div>
-	
-				<div class="mobile-align">
-													<ul class="nav navbar-nav navbar-right font-weight-normal">
-													<li><a class="social-pad"
-													href="https://t.me/TokenPrintersTeam"
-													target="_blank"><img alt="BscScan Logo" class="social-icons" src="./assets/img/bscan_logo.png"><span
-													class="hide-mobile">Telegram</span></a></li>
-													<li><a class="social-pad"
-													href="https://testnet.bscscan.com/address/0xe2B6f94C06E75818557870515ee32678a3ADaC1B"
-													target="_blank"><img alt="BscScan Logo" class="social-icons" src="./assets/img/telegram.svg"><span
-													class="hide-mobile">Verified Contract</span></a></li>
-											</ul>
-					 </div>
-				  </div>
-				   </nav>
-    <div>
-  <ul style="display:none;" class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" id="miners-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Ghostbusters</a></li>
-  </ul>
-  <div class="tab-content" id="myTabContent" style="padding: 35px;">
-    <div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="miners-tab">
-       <h6>GhostBusters</h6> 
-	   <h5>Harvest Shards, Earn FTM, Repeat.</h5>
-      <div class="jumbotron">
-  			<div class="container-fluid miners-tally-container">
-				<div class="row">
-					<p><span id="contractBal" style="justify-content: space-between;display: flex;padding: 25px;">Contract: <a>0</a> </span></p>
-				</div>
-				<div class="row">
-					<p><span id="userTrx" style="justify-content: space-between;display: flex;padding: 25px;"> Wallet: <a>0</a></span></p>
-				</div>
-				<div style="justify-content: center;display: flex;">
-					</div>
-  				<div class="row">
-  					<div class="col-md-12">
-						<p>	<span class="numminers" style="justify-content: space-between;display: flex;padding: 9px">Shards: <a>0</a></span></p>
-  					</div>
-  				</div>
-				  <div class="col-md-6 nopad-left nopad-lr" style="display: contents;">
-					<div class="spend-input" style="padding: 30px;">
-						<input class="form-control" id="ethtospend" onchange="updateBuyPrice()" step="1" type="number" value="1"> <span class="bnb-text">FTM</span>
-					</div><a class="btn btn-lg btn-buy" onclick="buyEggs2(); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo2').play() " role="button">Buy <span id="eggstobuy">?</span> Shards</a>
-		<h2><a class="pphr">FTM: </a><span id="sellprice">?</span>  </h2>
-		
-					<p class="mw-250"><br/>
-		<span id="sellsforexample"></span>
-	  </p>
-	  <div class="row">
-		<div width="250">
-<p><a class="btn btn-lg btn-hatch" onclick="hatchEggs1(); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo2').play()" role="button">Compound</a></p>
-		</div>
-	<div width="250"></div>
-			<p><a class="btn btn-lg btn-sell" onclick="sellEggs(displayTransactionMessage); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo3').play(); document.getElementById('sellprice')" role="button">Pocket</a></p>
-		</div>
-		</div>
-  			</div>
-			  <div class="tab-content2">
-  			<div class="container">
-  					<div class="col-md-6 nopad-left nopad-lr">
-					<p style="font-size: 30px">Statistics</p>
-					<br>
-  					</div>
-  					</div>	
-					  <p><span style="justify-content: space-between;display: flex;padding: 25px;"> Daily Return: <a>8%</a></span></p>
-					  <p><span style="justify-content: space-between;display: flex;padding: 25px;"> APR: <a>2,920%</a></span></p>
-					  <p><span style="justify-content: space-between;display: flex;padding: 25px;"> Deposit Fee: <a>8%</a></span></p>
-  			</div>
-  		</div>
-    </div>
-		<footer class="footer">
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
+	<head>
+		<meta charset="utf-8">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<meta content="Hire Miners to earn FTM" name="description">
+		<meta name="image" content="assets/img/FANTOM.png">
+		<!-- opengraph image -->
+		<meta property="og:image" content="assets/img/FANTOM.png">
+		<meta property="og:title" content="Ghostbusters">
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="Hire Miners to earn FTM">
+		<meta property="og:url" content="index.html">
+		<!-- Twitter meta -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="index.html">
+		<meta name="twitter:title" content="Ghostbusters">
+		<meta name="twitter:description" content="Hire Miners to earn FTM">
+		<meta name="twitter:image" content="assets/img/FANTOM.png">
+		<!-- favicon files -->
+		<link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16" />
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="theme-color" content="#ffffff">
+		<title>Ghostbusters</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Libre+Franklin:wght@200&family=Rubik+Wet+Paint&family=Ubuntu:ital,wght@1,500&display=swap"
+			rel="stylesheet"> <!-- bootstrap core CSS -->
+		<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		<link href="jumbotron-narrow.css" rel="stylesheet">
+		<link href="custom.css" rel="stylesheet">
+		<link href="assets/fonts/fonts.min.css" rel="stylesheet" type="text/css">
+	</head>
 
-			<div class="row">
-				<div class="col-lg-6">
-				    <h4><u>Sustainability</u></h4>
-                    <p>Unlike it's predecessors which paid 100% daily, causing instant and massive inflation. Ghostbuster pays a modest 3% daily, allowing investors to rest easy knowing that their investments have unlimited growth potential and a maximum, improbable risk of less than 3%.
-                    
-                    <h4><u>Verified Public Contract</u></h4>
-                    <p>The Ghostbusters contract is public, verified and can be viewed here on <a href="https://bscscan.com/address/0xce93f9827813761665ce348e33768cb1875a9704" target="_blank"><u>FTMScan</u></a>.
-                    </p>
-                    
-                    
-				</div>
-				<div class="col-lg-6">
-				    <h4><u>Miner Info</u></h4>
-					<p>Ghostbusters pays 8% daily, according to the current mining efficiency rate. The mining efficiency rate rises and falls as you and other players hire miners, compound earnings and pocket FTM. </p>
-					<p>The object of the game is hiring more miners, sooner and more often than other players. This in turn earns you more FTM faster. Hiring more miners using your daily FTM earnings will 3x your miners within 30 days or less.</p>
-					
-				</div>
-                
-			<div class=""></div>
-			    <div class="col-lg-12">
-  					<center><p><span><a href="instructions.html" target="_blank"><img alt="How To Start Mining" src="assets/img/quesionmarkguy.png" width="15%" height="auto"><b>How To Start Mining</b></a></span></p></center>
-  				</div>
-				<div class="">
-				    <div class="col-md-12">
-				<font style="font-size:14px">
-					<center><p>Share your Ghostbusters referral link, our contract pays you a <b>10%</b> referral fee when anyone uses your link to hire miners: <a id="playerreflink" onclick="copyRef()">?
-					<p></p><input id="copytextthing" style="display:none;" type="text" value="Hello Worldfdgerh"></a></p></center></font>
+	<body>
+		<div class="modal" id="myModal">
+			<div class="modal-content">
+				<div id="modal-internal"></div>
 			</div>
-                    
+		</div>
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div></div>
+					<div class="navbar-header">
+					</div>
+					<div class="mobile-align">
+						<ul class="nav navbar-nav navbar-right font-weight-normal">
+							<li><a class="social-pad" href="https://t.me/TokenPrintersTeam" target="_blank"><img
+										alt="BscScan Logo" class="social-icons" src="./assets/img/bscan_logo.png"><span
+										class="hide-mobile">Telegram</span></a></li>
+							<li><a class="social-pad"
+									href="https://testnet.bscscan.com/address/0xe2B6f94C06E75818557870515ee32678a3ADaC1B"
+									target="_blank"><img alt="BscScan Logo" class="social-icons"
+										src="./assets/img/telegram.svg"><span class="hide-mobile">Verified
+										Contract</span></a></li>
+						</ul>
+					</div>
 				</div>
-		</footer>
-	</div>
-	<!-- scripts -->
-	<script src="assets/js/ie-emulation-modes-warning.js">
-	</script>
-	<script src="assets/js/web3.min.js">
-	</script>
-	<script src="interface.js">
-	</script>
-	<script src="main.js">
-	</script>
-	<audio id="lostmojo" autoplay="autoplay" loop="loop">
-    <source src="#" type="audio/mpeg">
-</audio>
-<audio id="lostmojo2">
-    <source src="assets/sounds/miningsound.mp3" type="audio/mpeg">
-</audio>
-<audio id="lostmojo3">
-    <source src="assets/sounds/bnbcashout.mp3" type="audio/mpeg">
-</audio>
-	
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<script src="assets/js/ie10-viewport-bug-workaround.js">
-	</script>
-	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-	</script>
-	<script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-	</script>
-	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
-	</script>
-	
+			</nav>
+			<div>
+				<ul style="display:none;" class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
+					<li role="presentation" class="active"><a href="#home" id="miners-tab" role="tab" data-toggle="tab"
+					aria-controls="home" aria-expanded="true">Ghostbusters</a></li>
+				</ul>
+				<div class="tab-content" id="myTabContent" style="padding: 35px;">
+					<div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="miners-tab">
+						<h6>GhostBusters</h6>
+						<h5>Harvest Shards, Earn FTM, Repeat.</h5>
+						<div class="jumbotron">
+							<div class="container-fluid miners-tally-container">
+								<div class="row">
+									<p><span id="contractBal"
+										style="justify-content: space-between;display: flex;padding: 25px;">Contract:
+										<a>0</a> </span></p>
+								</div>
+								<div class="row">
+									<p><span id="userTrx"
+									style="justify-content: space-between;display: flex;padding: 25px;"> Wallet:
+									<a>0</a></span></p>
+								</div>
+								<div style="justify-content: center;display: flex;">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<p> <span class="numminers"
+										style="justify-content: space-between;display: flex;padding: 9px">Shards:
+										<a>0</a></span></p>
+									</div>
+								</div>
+								<div class="col-md-6 nopad-left nopad-lr" style="display: contents;">
+									<div class="spend-input" style="padding: 30px;">
+										<input class="form-control" id="ethtospend" onchange="updateBuyPrice()" step="1"
+											type="number" value="1"> <span class="bnb-text">FTM</span>
+									</div><a class="btn btn-lg btn-buy"
+										onclick="buyEggs2(); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo2').play() "
+										role="button">Buy <span id="eggstobuy">?</span> Shards</a>
+									<h2><a class="pphr">FTM: </a><span id="sellprice">?</span> </h2>
+									<p class="mw-250"><br />
+										<span id="sellsforexample"></span>
+									</p>
+									<div class="row">
+										<div width="250">
+											<p><a class="btn btn-lg btn-hatch"
+											onclick="hatchEggs1(); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo2').play()"
+											role="button">Compound</a></p>
+										</div>
+										<div width="250"></div>
+										<p><a class="btn btn-lg btn-sell"
+										onclick="sellEggs(displayTransactionMessage); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo3').play(); document.getElementById('sellprice')"
+										role="button">Pocket</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="tab-content2">
+								<div class="container">
+									<div class="col-md-6 nopad-left nopad-lr">
+										<p style="font-size: 30px">Statistics</p>
+										<br>
+									</div>
+								</div>
+								<p><span style="justify-content: space-between;display: flex;padding: 25px;"> Daily
+										Return: <a>8%</a></span></p>
+								<p><span style="justify-content: space-between;display: flex;padding: 25px;"> APR:
+										<a>2,920%</a></span></p>
+								<p><span style="justify-content: space-between;display: flex;padding: 25px;"> Dev Fee:
+										<a>5%</a></span></p>
+							</div>
+						</div>
+					</div>
+					<footer class="footer">
+						<div class="row">
+							<div class="col-lg-6">
+								<h4><u>Sustainability</u></h4>
+								<p>Unlike it's predecessors which paid 100% daily, causing instant and massive
+									inflation. Ghostbuster pays a modest 3% daily, allowing investors to rest easy
+									knowing that their investments have unlimited growth potential and a maximum,
+									improbable risk of less than 3%.
+								<h4><u>Verified Public Contract</u></h4>
+								<p>The Ghostbusters contract is public, verified and can be viewed here on <a
+									href="https://bscscan.com/address/0xce93f9827813761665ce348e33768cb1875a9704"
+									target="_blank"><u>FTMScan</u></a>.
+								</p>
+							</div>
+							<div class="col-lg-6">
+								<h4><u>Miner Info</u></h4>
+								<p>Ghostbusters pays 8% daily, according to the current mining efficiency rate. The
+									mining efficiency rate rises and falls as you and other players hire miners,
+									compound earnings and pocket FTM. </p>
+								<p>The object of the game is hiring more miners, sooner and more often than other
+									players. This in turn earns you more FTM faster. Hiring more miners using your daily
+									FTM earnings will 3x your miners within 30 days or less.</p>
+							</div>
+							<div class=""></div>
+							<div class="col-lg-12">
+								<center>
+									<p><span><a href="instructions.html" target="_blank"><img alt="How To Start Mining"
+									src="assets/img/quesionmarkguy.png" width="15%" height="auto"><b>How
+									To Start Mining</b></a></span></p>
+								</center>
+							</div>
+							<div class="">
+								<div class="col-md-12">
+									<font style="font-size:14px">
+										<center>
+											<p>Share your Ghostbusters referral link, our contract pays you a <b>10%</b>
+												referral fee when anyone uses your link to hire miners: <a
+													id="playerreflink" onclick="copyRef()">?
+													<p></p><input id="copytextthing" style="display:none;" type="text"
+														value="Hello Worldfdgerh">
+												</a></p>
+										</center>
+									</font>
+								</div>
 
-</body>
+							</div>
+					</footer>
+				</div>
+				<!-- scripts -->
+				<script src="assets/js/ie-emulation-modes-warning.js">
+				</script>
+				<script src="assets/js/web3.min.js">
+				</script>
+				<script src="interface.js">
+				</script>
+				<script src="main.js">
+				</script>
+				<audio id="lostmojo" autoplay="autoplay" loop="loop">
+					<source src="#" type="audio/mpeg">
+				</audio>
+				<audio id="lostmojo2">
+					<source src="assets/sounds/miningsound.mp3" type="audio/mpeg">
+				</audio>
+				<audio id="lostmojo3">
+					<source src="assets/sounds/bnbcashout.mp3" type="audio/mpeg">
+				</audio>
+				<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+				<script src="assets/js/ie10-viewport-bug-workaround.js">
+				</script>
+				<script src="../ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+				</script>
+				<script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+				</script>
+				<script src="../ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+				</script>
+
+	</body>
 
 </html>

@@ -91,7 +91,7 @@ function refreshData() {
   contractBalance(function (result) {
     rawStr = numberWithCommas(Number(result).toFixed(3))
     balanceElem.textContent =
-      "Contract Balance: " + stripDecimals(rawStr, 3) + " BNB"
+      "Contract Balance: " + stripDecimals(rawStr, 3) + " FTM"
   })
 
   web3.eth
@@ -99,7 +99,7 @@ function refreshData() {
     .then((result) => {
       rawStr = numberWithCommas(Number(web3.utils.fromWei(result)).toFixed(3))
       document.getElementById("userTrx").textContent =
-        "Your Balance: " + stripDecimals(rawStr, 3) + " BNB"
+        "Your Balance: " + stripDecimals(rawStr, 3) + " FTM"
     })
     .catch((err) => {
       console.log(err)
@@ -138,7 +138,7 @@ function refreshData() {
     calculateEggBuySimple(web3.utils.toWei("0.1"), function (eggs) {
       devFee(eggs, function (fee) {
         sellsforexampledoc.textContent =
-          "0.1 BNB Hires " + formatEggs(eggs - fee) + " miners"
+          "0.1 FTM Hires " + formatEggs(eggs - fee) + " ghosts"
       })
     })
   })

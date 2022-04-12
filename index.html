@@ -90,23 +90,19 @@
 								</div>
 								<div style="justify-content: center;display: flex;">
 								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<p class="tally-text">You have <span class="numminers" id="numminers">0</span> Ghosts</p>
-									</div>
-								</div>
-								<div class="col-md-6 nopad-left nopad-lr" style="display: contents;">
-									<div class="spend-input" style="padding: 30px;">
-										<input class="form-control" id="ethtospend" onchange="updateBuyPrice()" step="1"
-											type="number" value="1"> <span class="bnb-text">FTM</span>
-									</div><a class="btn btn-lg btn-buy"
-										onclick="buyEggs2(); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo2').play() "
-										role="button">Buy <span id="eggstobuy">?</span> Ghosts </a>
-									<h2><a class="pphr">Harvested: </a><span id="sellprice">?</span> </h2>
-									<p class="mw-250"><br />
-										<span id="sellsforexample"></span>
-									</p>
 
+<div>
+								<p class="tally-text">You have <span class="numminers">0</span> Miners</p>
+								<p class="pphr"></p>Mining <span id="production">0</span></h2> feet per hour</p>
+								<br>
+								<div class="spend-input"><p style="color:#354D5F;">Enter BNB Amount & Click Hire Below</p>
+								<input class="form-control" id="ethtospend" onchange="updateBuyPrice()" step="1" type="number" value="1"> <span class="bnb-text">BNB</span>
+								</div>
+							<br>
+								<a class="button" onclick="buyEggs2(); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo2').play() " role="button">Hires <span id="eggstobuy">?</span> Miners</a>
+						</div>
+
+									
 									<div class="row">
 										<div width="250">
 											<p><a class="btn btn-lg btn-hatch"

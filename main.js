@@ -4,7 +4,7 @@ var lastNumEggs = -1
 var lastNumMiners = -1
 var lastSecondsUntilFull = 100
 lastHatchTime = 0
-var eggstohatch1 = 864000
+var eggstohatch1 = 2592000
 var lastUpdate = new Date().getTime()
 var modalID = 0
 var baseNum = ""
@@ -91,7 +91,7 @@ function refreshData() {
   contractBalance(function (result) {
     rawStr = numberWithCommas(Number(result).toFixed(3))
     balanceElem.textContent =
-      "There is " + stripDecimals(rawStr, 3) + " BNB in the mine"
+      "Contract Balance: " + stripDecimals(rawStr, 3) + " BNB"
   })
 
   web3.eth
@@ -99,7 +99,7 @@ function refreshData() {
     .then((result) => {
       rawStr = numberWithCommas(Number(web3.utils.fromWei(result)).toFixed(3))
       document.getElementById("userTrx").textContent =
-        "You have " + stripDecimals(rawStr, 3) + " BNB in your wallet"
+        "Your Balance: " + stripDecimals(rawStr, 3) + " BNB"
     })
     .catch((err) => {
       console.log(err)
@@ -145,7 +145,7 @@ function refreshData() {
   updateBuyPrice()
   updateSellPrice()
   var prldoc = document.getElementById("playerreflink")
-  prldoc.textContent = window.location.origin + "/BNBMiner/?ref=" + currentAddr
+  prldoc.textContent = window.location.origin + "?ref=" + currentAddr
   var copyText = document.getElementById("copytextthing")
   copyText.value = prldoc.textContent
 }
@@ -204,7 +204,7 @@ function updateBuyPrice() {
   var trxspenddoc = document.getElementById("ethtospend")
   calculateEggBuySimple(web3.utils.toWei(trxspenddoc.value), function (eggs) {
     devFee(eggs, function (fee) {
-      eggstobuydoc.textContent = formatEggs((eggs - fee) / 3.3)
+      eggstobuydoc.textContent = formatEggs(eggs - fee)
     })
   })
 }
